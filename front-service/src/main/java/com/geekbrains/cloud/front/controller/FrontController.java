@@ -22,6 +22,7 @@ public class FrontController {
     @Autowired
     private RestTemplate restTemplate;
 
+
     @Bean
     @LoadBalanced
     public RestTemplate restTemplate() {

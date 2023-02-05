@@ -14,7 +14,6 @@ import java.util.stream.Collectors;
 @CrossOrigin("*") // Homework: *
 public class ProductController {
     private final ProductService productService;
-
     private static final Function<Product, ProductDto> mapper = p -> new ProductDto(p.getId(), p.getTitle(), p.getPrice());
 
     @GetMapping
